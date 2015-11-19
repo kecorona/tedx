@@ -1,7 +1,10 @@
 html, body {
   position: relative;
   overflow-x: hidden; }
-
+@font-face {
+  font-family: 'Helvetica-Black';
+  src: url(../fonts/Helvetica-Black.otf);
+}
 /*-----------------------------------------
     Page Loader
 ------------------------------------------*/
@@ -270,6 +273,16 @@ a:focus {
 .navbar > .container-fluid .navbar-brand {
   margin-left: 0; }
 
+.navbar h2  {
+  font-family: 'Helvetica-Black';
+  text-transform: none;
+}
+
+.navbar h3  {
+  font-family: 'Helvetica Nueue';
+  text-transform: none;
+}
+
 .carousel-control.left,
 .carousel-control.right {
   background: none; }
@@ -441,6 +454,18 @@ blockquote p {
   font-style: italic;
   font-size: 18px;
   letter-spacing: 0; }
+
+sup, sub { 
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; } 
+
+  sup { 
+    top: -.4em; } 
+
+  sub { 
+    bottom: -0.25em; }
 
 .plain-list li {
   line-height: 2.2em; }
