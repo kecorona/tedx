@@ -125,10 +125,33 @@ html, body {
   left: calc(50% - 8px);
   bottom: 0; }
 
+.sub-section-heading {
+  position: relative;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 992px) {
+    .section-heading {
+      margin-bottom: 5px; } }
+  
+
 .dark-bg .section-heading {
   color: #fff; }
 .dark-bg .section-heading::after {
   background-color: #fff; }
+
+.divider-vertical {
+height: 40px;
+margin: 0 9px;
+border-left: 1px solid #000000;
+border-right: 1px solid #000000; }
+@media only screen and (max-width: 800px){ 
+  .divider-vertical {
+    height:0;
+    border-left: 0;
+    border-right: 0;} } 
 
 /* Check list */
 .check-list {
@@ -559,12 +582,24 @@ sup, sub {
 .btn-default-o:hover, .btn-default-o:focus {
   color: #000000; }
 
+.btn-lesley {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #00633e; }
+
+.btn-lesley:active, .btn-lesley:hover, .btn-lesley:focus {
+  background-color: #00633e;
+  color: #00633e; }
+
 .btn-list {
   margin-bottom: 0; }
   .btn-list button {
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 15px; }
 
+.btn-group-vertical input {
+  margin-bottom: 10px !important;
+}
 .btn.btn-round {
   border-radius: 14px; }
   .btn.btn-round.btn:before {
@@ -949,7 +984,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', end
 .flex-direction-nav a:before {
   font-family: "Ionicons";
   color: white; }
-
+.poll {
+  background-color: bg-base-color; }
+  .poll .lborder {
+    border-left: 1px solid #dadada; }
+    @media only screen and (max-width: 767px) {
+      .poll .lborder {
+        border-left: none; } }
+  .poll .rborder {
+    border-right: 1px solid #dadada; }
+    @media only screen and (max-width: 767px) {
+      .poll .rborder {
+        border-right: none; } }
+}
 .team {
   background-color: bg-base-color; }
   .team .lborder {
